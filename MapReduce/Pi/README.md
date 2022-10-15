@@ -52,7 +52,48 @@ Hadoop environment
 
 
 
+Java environment
 
+Input data
+
+
+  $ mkdir PiCalculation
+  $ cd PiCalculation
+  $ vi GenerateRandomNumbers.java
+  $ javac GenerateRandomNumbers.java
+  $ java -cp . GenerateRandomNumbers
+  
+  
+Make HDFS directory
+
+  $ bin/hdfs dfs -mkdir /user
+  $ bin/hdfs dfs -mkdir /user/tbien
+  $ bin/hdfs dfs -mkdir /user/tbien/picalculate
+  $ bin/hdfs dfs -mkdir /user/tbien/picalculate/input2
+  $ bin/hdfs dfs -put ../PiCalculation1/PiCalculationInput /user/tbien/picalculate/input2
+  
+  
+  Complile PiCaculation.java
+  
+  $ bin/hadoop com.sun.tools.javac.Main PiCalculation.java
+  $ jar cf wc.jar PiCalculation*class  
+  
+  
+  Run
+  
+  $ bin/hadoop jar wc.jar PiCalculation /user/tbien/picalculate/input /user/tbien/picalculate/output3
+  
+  Output
+  
+  $ bin/hdfs dfs -ls /user/tbien/picalculate/output3
+  $ bin/hdfs dfs -cat /user/tbien/picalculate/output3/part-r-00000 
+  
+  
 
 Test result
+
+
+
+<img width="900" alt="test" src="https://user-images.githubusercontent.com/68774929/196011751-eb0be8bb-f97c-4294-b168-44dc42cb3111.png">
+
 
