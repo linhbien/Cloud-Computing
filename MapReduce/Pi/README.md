@@ -13,13 +13,13 @@ Design
 
 
 
-Step 1: Generate an input file to the Pi MapReduce program
+            Step 1: Generate an input file to the Pi MapReduce program
 
-Step 2: Create a MapReduce program to calculate the numbers of inside darts and outside darts.
+            Step 2: Create a MapReduce program to calculate the numbers of inside darts and outside darts.
 
-Step 3: Use the file generated in Step 1.2 as the input to execute the MapReduce program created in Step 2
+            Step 3: Use the file generated in Step 1.2 as the input to execute the MapReduce program created in Step 2
 
-Step 4: Calculate Pi in the driver program based on the numbers of inside darts and outside darts.
+            Step 4: Calculate Pi in the driver program based on the numbers of inside darts and outside darts.
 
 
 
