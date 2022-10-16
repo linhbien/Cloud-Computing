@@ -63,15 +63,15 @@ Input data
 
 
 
-  $ mkdir PiCalculation
-  
-  $ cd PiCalculation
-  
-  $ vi GenerateRandomNumbers.java
-  
-  $ javac GenerateRandomNumbers.java
-  
-  $ java -cp . GenerateRandomNumbers
+      $ mkdir PiCalculation
+
+      $ cd PiCalculation
+
+      $ vi GenerateRandomNumbers.java
+
+      $ javac GenerateRandomNumbers.java
+
+      $ java -cp . GenerateRandomNumbers
   
   
   
@@ -79,15 +79,15 @@ Make HDFS directory
 
 
 
-  $ bin/hdfs dfs -mkdir /user
-  
-  $ bin/hdfs dfs -mkdir /user/tbien
-  
-  $ bin/hdfs dfs -mkdir /user/tbien/picalculate
-  
-  $ bin/hdfs dfs -mkdir /user/tbien/picalculate/input2
-  
-  $ bin/hdfs dfs -put ../PiCalculation1/PiCalculationInput /user/tbien/picalculate/input2
+      $ bin/hdfs dfs -mkdir /user
+
+      $ bin/hdfs dfs -mkdir /user/tbien
+
+      $ bin/hdfs dfs -mkdir /user/tbien/picalculate
+
+      $ bin/hdfs dfs -mkdir /user/tbien/picalculate/input2
+
+      $ bin/hdfs dfs -put ../PiCalculation1/PiCalculationInput /user/tbien/picalculate/input2
   
   
 
@@ -95,28 +95,28 @@ Complile PiCaculation.java
 
 
   
-  $ bin/hadoop com.sun.tools.javac.Main PiCalculation.java
-  
-  $ jar cf wc.jar PiCalculation*class  
-  
+      $ bin/hadoop com.sun.tools.javac.Main PiCalculation.java
+
+      $ jar cf wc.jar PiCalculation*class  
+
   
  Run
  
  
   
-  $ bin/hadoop jar wc.jar PiCalculation /user/tbien/picalculate/input /user/tbien/picalculate/output3
-  
+      $ bin/hadoop jar wc.jar PiCalculation /user/tbien/picalculate/input /user/tbien/picalculate/output3
+
   
   
 Output
 
 
   
-  $ bin/hdfs dfs -ls /user/tbien/picalculate/output3
-  
-  $ bin/hdfs dfs -cat /user/tbien/picalculate/output3/part-r-00000 
-  
-  
+      $ bin/hdfs dfs -ls /user/tbien/picalculate/output3
+
+      $ bin/hdfs dfs -cat /user/tbien/picalculate/output3/part-r-00000 
+
+
   
 
 Test result
