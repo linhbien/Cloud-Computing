@@ -1,7 +1,9 @@
 Description about Pi:
 
 Throw N darts on the board. Each dart lands at a random position (x,y) on the board.
+
 Note if each dart landed inside the circle or not:
+
             x² + y² < r²
 
 
