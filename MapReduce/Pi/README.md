@@ -5,6 +5,9 @@ Throw N darts on the board. Each dart lands at a random position (x,y) on the bo
 Note if each dart landed inside the circle or not:
 
             x² + y² < r²
+            
+            
+Take the total number of dart that landed in the circle as S
 
 
 
