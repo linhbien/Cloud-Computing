@@ -15,12 +15,12 @@ PageRank
 
 1. If The initial PageRank value for each webpage is 1.
 
-  PR(A) = 1
-  PR(B) = 1
-  PR(C) = 1
-  Page B has a link to pages C and A
-  Page C has a link to page A
-  Page D has links to all three pages
+    PR(A) = 1
+    PR(B) = 1
+    PR(C) = 1
+    Page B has a link to pages C and A
+    Page C has a link to page A
+    Page D has links to all three pages
   
 
 2. Then
