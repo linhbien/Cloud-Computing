@@ -1,10 +1,17 @@
 PageRank
 
 
-1. Theory
+1. Introduction
 
 
-image
+
+
+<img width="326" alt="199075533-ecaf0d4d-45d7-4133-b285-05b0efca2edb" src="https://user-images.githubusercontent.com/68774929/199285933-9cbb8fe5-ef22-49e6-870a-07228251b4b0.png">
+
+
+
+
+
 
 If The initial PageRank value for each webpage is 1.
 PR(A) = 1
