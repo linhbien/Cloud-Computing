@@ -85,3 +85,10 @@ Set up PySpark on GCP
 
 
 ![image](https://user-images.githubusercontent.com/68774929/200699970-e4f07050-0bb0-4b67-b311-bca2cdb1bce8.png)
+
+
+
+        Connecting to the Master Node using Secure Shell (ssh)
+
+![image](https://user-images.githubusercontent.com/68774929/200700536-c3c71d2f-27fb-4e92-8dd0-402e34c4f9cc.png)
+
