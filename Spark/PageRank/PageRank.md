@@ -59,3 +59,29 @@ PageRank
   
 4. You can keep iterate
 ....
+
+II. Observation of page rank
+
+A web page does not have input will have:
+
+        Constant PageRank: 1-d
+        The smallest PageRank Input Web Pages' impact to the PageRank of a web page:
+        The more Input Web Pages the better.
+        The higher PageRank of an Input Web Page the better.
+        
+
+III. PageRank + PySpark + GCP
+
+Set up PySpark on GCP
+
+        Enable the Google Cloud Compute Engine API
+        Create, Configure and Launch a Google Cloud Dataproc cluster
+
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/68774929/200699970-e4f07050-0bb0-4b67-b311-bca2cdb1bce8.png)
