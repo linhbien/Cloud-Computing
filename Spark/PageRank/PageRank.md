@@ -225,3 +225,14 @@ Prepare the program and Runing the program
 10 iteration
 
 ![image](https://user-images.githubusercontent.com/68774929/200714264-4fe450db-86e2-4324-8905-f0a2673040dc.png)
+
+
+Delete VM instance, Cluster
+
+![image](https://user-images.githubusercontent.com/68774929/200715360-84605884-a147-4c1d-a696-46943c51f087.png)
+
+
+
+![image](https://user-images.githubusercontent.com/68774929/200715442-b17b6334-99ed-45b0-9527-2bed5b424adb.png)
+
+
