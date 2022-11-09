@@ -148,3 +148,18 @@ Running the program with Pyspark
 
 
 
+2nd iteration
+
+
+![image](https://user-images.githubusercontent.com/68774929/200712633-df07bc20-7da8-4434-b553-ac41e791d197.png)
+
+
+
+10 iteration
+
+
+![image](https://user-images.githubusercontent.com/68774929/200712800-74c380c5-0917-464a-ace9-d69129dfcc1e.png)
+
+
+
+
