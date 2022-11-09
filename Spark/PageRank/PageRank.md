@@ -163,3 +163,27 @@ Running the program with Pyspark
 
 
 
+Scala
+
+
+1st iteration
+
+
+![image](https://user-images.githubusercontent.com/68774929/200714474-59a3e0b1-7771-42e9-b8a0-1c66e418be35.png)
+
+
+
+
+2nd iteration
+
+
+![image](https://user-images.githubusercontent.com/68774929/200714560-eca455f8-9239-404f-9c46-a614234ff0f5.png)
+
+
+
+
+
+
+10 iteration
+
+![image](https://user-images.githubusercontent.com/68774929/200714264-4fe450db-86e2-4324-8905-f0a2673040dc.png)
