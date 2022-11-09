@@ -92,3 +92,20 @@ Set up PySpark on GCP
 
 ![image](https://user-images.githubusercontent.com/68774929/200700536-c3c71d2f-27fb-4e92-8dd0-402e34c4f9cc.png)
 
+
+
+<img width="161" alt="pagerank" src="https://user-images.githubusercontent.com/68774929/200702987-44b1568e-f8af-43f9-9b46-167f55c7b9f4.png">
+
+
+
+    Manually calculate the first 2 iteration of the PageRank
+    
+        Fỉst iteration A = 1 B = (1/2) = 0.5 C = 1 + (1/2) = 1.5 PageRank (A) = 1 – 0.85 + 0.85 * 1 = 1 PageRank (B) = 1 – 0.85 + 0.85 * 1 = 0.575 PageRank           (C) = 1 – 0.85 + 0.85 * 1.5 = 1.425
+
+        Second iteration A = 1 B = (1/2) = 0.5 C = 0.575 + (1/2) = 1.075 PageRank (A) = 1 – 0.85 + 0.85 * 1.425 = 1.36125 PageRank (B) = 1 – 0.85 + 0.85 *           0.5 = 0.575 PageRank (C) = 1 – 0.85 + 0.85 * 1.075 = 1.06375
+
+    Prepare Data in HDFS
+    
+    Manual input data
+
+
