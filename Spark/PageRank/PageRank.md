@@ -107,5 +107,40 @@ Set up PySpark on GCP
     Prepare Data in HDFS
     
     Manual input data
+    
+    
+    Prepare Data in HDFS
+    
+Manual input data
+
+        vi pagerank_data.txt
+        
+Data
+
+        A B
+        A C
+        B C
+        C A
+        
+create a directory (folder) to store the data:
+
+        hdfs dfs -mkdir hdfs:///mydata 
+        hdfs dfs -put pagerank_data.txt hdfs:///mydata
+        
+To verify that the file is indeed located in the mydata folder, run the following command:
+
+        hdfs dfs -ls hdfs:///mydata 
+        
+Prepare the program
+
+The code is on the above py file.
+
+        vi pagerank.py
+
+Running the program with Pyspark
+
+        spark-submit pagerank.py hdfs:///mydata/pagerank_data.txt 1
+        
+1 is the iteration count
 
 
