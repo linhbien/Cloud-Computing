@@ -144,3 +144,7 @@ Running the program with Pyspark
 1 is the iteration count
 
 
+![image](https://user-images.githubusercontent.com/68774929/200712355-eb2804c2-fbf0-4ab8-891a-f25caedaedda.png)
+
+
+
