@@ -163,8 +163,46 @@ Running the program with Pyspark
 
 
 
+IV. PageRank + Scala + GCP
+
+
 Scala
 
+
+
+Install Scala
+
+        $ curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup
+        $ export SCALA_HOME=/usr/local/share/scala 
+        $ export PATH=$PATH:$SCALA_HOME/ 
+
+
+
+1.Prepare data
+
+Manual input data
+
+        vi pagerank_data.txt
+        
+Data
+
+        A B
+        A C
+        B C
+        C A
+create a directory (folder) to store the data:
+
+        hdfs dfs -mkdir hdfs:///mydata 
+        hdfs dfs -put pagerank_data.txt hdfs:///mydata
+        
+        
+To verify that the file is indeed located in the mydata folder, run the following command:
+
+        hdfs dfs -ls hdfs:///mydata 
+        
+Prepare the program and Runing the program
+
+        spark-shell
 
 1st iteration
 
