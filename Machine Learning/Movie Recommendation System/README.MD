@@ -48,10 +48,90 @@ Step 3: Experiment Pyspark code (ipynb) of PySpark Collaborative Filtering with 
 
 
 
-Result
+2. Result
 
 
 ![image](https://user-images.githubusercontent.com/68774929/203480134-4ad81dd6-00bd-4580-ad5d-3867ed160761.png)
+
+
+
+3. Save the modified ipynb file as py format
+
+
+4. Save the modified ipynb file as HTML format which can be used on Step 5 of this project
+
+
+Run the py file saved on GCP
+
+
+1.Set up PySpark on GCP
+
+
+Steps:
+
+    1. Enable the Google Cloud Compute Engine API
+
+    2. Create, Configure and Launch a Google Cloud Dataproc cluster
+    
+![image](https://user-images.githubusercontent.com/68774929/203480838-80a1be22-d068-4072-9826-fc60231ff367.png)
+
+
+    3. Connecting to the Master Node using Secure Shell (ssh)
+    
+2. Prepare Data in HDFS
+
+    movies.csv
+    
+    rating.csv
+    
+    tags.csv
+    
+    recommendation_engine_movielens.py
+    
+    1.Upload movies.csv and ratings.csv files at GCP
+    
+    
+    ![image](https://user-images.githubusercontent.com/68774929/203481098-89e808a0-c265-433b-aabe-e7c66e3b3b94.png)
+    
+    
+    
+    2. Create a directory (folder) to store the data:
+    
+        hdfs dfs -mkdir hdfs:///mydata 
+        hdfs dfs -put movies.csv hdfs:///mydata
+        hdfs dfs -put ratings.csv hdfs:///mydata
+        
+        
+To verify that the file is indeed located in the mydata folder, run the following command:
+
+        hdfs dfs -ls hdfs:///mydata 
+        
+        
+ ![image](https://user-images.githubusercontent.com/68774929/203481303-6acf91ee-afe5-4fd7-9dc3-1ff841e51306.png)
+
+
+    3.Prepare the program
+    
+The code is on the above py file. Upload the file to GCP.
+
+        vi recommendation_engine_movielens.py
+        
+![image](https://user-images.githubusercontent.com/68774929/203481431-89161ff9-960e-463b-9d69-dac32e8817f0.png)
+
+
+
+    4.Running the program with Pyspark
+
+        spark-submit recommendation_engine_movielens.py
+        
+        
+    5. Result
+
+
+
+
+
+
 
 
     
