@@ -19,4 +19,41 @@ Step 3: Experiment Pyspark code (ipynb) of PySpark Collaborative Filtering with 
     1. First upload the data to the running space, then install pyspark in Google Colab
     
     
+![image](https://user-images.githubusercontent.com/68774929/203478687-676ebc18-d11a-4f0d-ad23-97b12399ccb9.png)
+
+
+
+![image](https://user-images.githubusercontent.com/68774929/203478986-9dbe41c1-b595-47f5-8d1c-0669710220d8.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/68774929/203479568-6b9db717-7830-47f9-9f41-3860d2c9eb20.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/68774929/203479681-916782bd-1ad8-4cce-989b-ada0ff08a91b.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/68774929/203479839-55a0467c-e277-4a60-82dc-019201e792cf.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/68774929/203479940-94b312a3-fa21-42f7-a8b6-5fbca702164e.png)
+
+
+
+
+Result
+
+
+![image](https://user-images.githubusercontent.com/68774929/203480134-4ad81dd6-00bd-4580-ad5d-3867ed160761.png)
+
+
+    
+    
     
