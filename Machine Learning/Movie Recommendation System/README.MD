@@ -177,6 +177,12 @@ The code is on the above py file. Upload the file to GCP.
         
         
     5. Result
+    
+    
+    
+    
+    <img width="885" alt="movieresult" src="https://user-images.githubusercontent.com/68774929/204102699-07e41df1-b342-4c48-8eb1-19fcaf741c04.png">
+
 
 
 
