@@ -5,11 +5,11 @@ Step 1: Study PySpark Collaborative Filtering with ALS
 Step 2: Study Colab
 
 
-    Google is quite aggressive in AI research. Over many years, Google developed AI framework called TensorFlow and a development tool called Colaboratory. Today TensorFlow is open-sourced and since 2017, Google made Colaboratory free for public use. Colaboratory is now known as Google Colab or simply Colab.
+Google is quite aggressive in AI research. Over many years, Google developed AI framework called TensorFlow and a development tool called Colaboratory. Today TensorFlow is open-sourced and since 2017, Google made Colaboratory free for public use. Colaboratory is now known as Google Colab or simply Colab.
 
-    Another attractive feature that Google offers to the developers is the use of GPU. Colab supports GPU and it is totally free. The reasons for making it free for public could be to make its software a standard in the academics for teaching machine learning and data science. It may also have a long term perspective of building a customer base for Google Cloud APIs which are sold per-use basis.
+Another attractive feature that Google offers to the developers is the use of GPU. Colab supports GPU and it is totally free. The reasons for making it free for public could be to make its software a standard in the academics for teaching machine learning and data science. It may also have a long term perspective of building a customer base for Google Cloud APIs which are sold per-use basis.
 
-    Irrespective of the reasons, the introduction of Colab has eased the learning and development of machine learning applications.
+Irrespective of the reasons, the introduction of Colab has eased the learning and development of machine learning applications.
     
     
     
@@ -168,7 +168,7 @@ The code is on the above py file. Upload the file to GCP.
 
 
 
-    4.Running the program with Pyspark
+4.Running the program with Pyspark
 
 
 
@@ -176,7 +176,7 @@ The code is on the above py file. Upload the file to GCP.
         
         
         
-    5. Result
+ 5. Result
     
     
     
