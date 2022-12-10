@@ -95,3 +95,58 @@ Step 5: Create producer.py, then run it(terminal 4)
     producer.close()
 
 Step 6: Result
+
+
+5. Implement Kafka + Spark Streaming + PySpark
+
+Step 1: In terminal 1(Start Kafka Zookeeper):
+
+    $ cd kafka_2.12-3.3.1/
+    $ bin/zookeeper-server-start.sh config/zookeeper.properties
+Step 2: In terminal 2(Start Kafka broker):
+
+    $ cd kafka_2.12-3.3.1/
+    $ bin/kafka-server-start.sh config/server.properties
+Step 3: Create two Kafka Topics (input_event and output_event)
+
+    $ cd kafka_2.12-3.3.1/
+    $ bin/kafka-topics.sh --create --topic input_event --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+    $ bin/kafka-topics.sh --create --topic output_event --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+Now, we have two topic: input_event, output_event
+
+Step 4: In terminal 3, create consumer.py, then run it:
+
+    $ vi consumer.py
+    $ python3 consumer.py
+
+from kafka import KafkaConsumer
+
+consumer = KafkaConsumer('output_event', bootstrap_servers=['localhost:9092'])
+for msg in consumer:
+    print(msg)
+Step 5: In terminal 4, create producer.py, then run it:
+
+    $ vi producer.py
+    $ python3 producer.py
+
+from kafka import KafkaProducer
+
+producer = KafkaProducer(bootstrap_servers='localhost:9092', value_serializer=str.encode, key_serializer=str.encode)
+event_stream_key = 'product_list'
+event_stream_value = 'product1 product2 product3 product1'
+producer.send('input_event', key = event_stream_key, value = event_stream_value)
+In terminal 5, running spark_processor.py
+
+spark_processor.py will process events and write back to Kafka: 1.consume the message from input_event topic 2.process the data 3.push the message to output_event topic.
+
+
+
+    $ spark-submit --packages org.apache.spark:spark-streaming-kafka-0-10_2.12:3.1.3,org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.3 --deploy-mode client spark_processor.py
+
+
+6.Analyse
+Now, we have two method:
+
+install 2.* version spark to run the program. It is not working
+Change the spark_processor.py code to receiving data from kafka. https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
+Then I try the second method, it still have some problem, I can't receive the data from kafka.
