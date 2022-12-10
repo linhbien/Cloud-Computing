@@ -145,8 +145,6 @@ spark_processor.py will process events and write back to Kafka: 1.consume the me
 
 
 6.Analyse
-Now, we have two method:
 
-install 2.* version spark to run the program. It is not working
-Change the spark_processor.py code to receiving data from kafka. https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
-Then I try the second method, it still have some problem, I can't receive the data from kafka.
+
+
